@@ -44,8 +44,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tnemo65/22024544_LeDacThinh_GithubAction:latest
+      run: docker build . --file Dockerfile --tag tnemo65/githubaction:latest
     - name: Push the Docker image
       run: |
         docker login -u tnemo65 -p ${{ secrets.DOCKER_HUB_TOKEN }}
-        docker push tnemo65/22024544_LeDacThinh_GithubAction:latest
+        docker push tnemo65/githubaction:latest
