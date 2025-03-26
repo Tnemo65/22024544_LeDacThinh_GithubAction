@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: docker.io/tnemo65/githubaction  # Thay bằng image từ GitHub Actions
+        image: docker.io/tnemo65/githubaction:latest  # Thay bằng image từ GitHub Actions
         ports:
         - containerPort: 80
 ---
